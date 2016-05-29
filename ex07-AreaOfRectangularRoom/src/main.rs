@@ -2,6 +2,8 @@ extern crate commons;
 use commons::prompt;
 use commons::input;
 
+const factor: f64 = 0.09290304;
+
 fn main() {
     prompt("What is the length of the room in feet? ");
     let mut _length = String::new();
@@ -16,7 +18,5 @@ fn main() {
     println!("You entered dimentions of {} feet by {} feet.", length, width);
     println!("The area is");
     println!("{} square feet", length * width);
-
-    let factor = 0.09290304;
     println!("{} square meters", length * width * factor);
 }
