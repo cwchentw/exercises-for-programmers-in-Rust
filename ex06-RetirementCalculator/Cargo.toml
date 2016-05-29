@@ -1,0 +1,8 @@
+[package]
+name = "Exercise6-RetirementCalculator"
+version = "0.1.0"
+authors = ["Michael Chen <cwchen123@gmail.com>"]
+
+[dependencies]
+time = "0.1"
+commons = { path = "../commons" }

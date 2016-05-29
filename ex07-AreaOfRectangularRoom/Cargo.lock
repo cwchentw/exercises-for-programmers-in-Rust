@@ -1,0 +1,11 @@
+[root]
+name = "ex07-AreaOfRectangularRoom"
+version = "0.1.0"
+dependencies = [
+ "commons 0.1.0",
+]
+
+[[package]]
+name = "commons"
+version = "0.1.0"
+
