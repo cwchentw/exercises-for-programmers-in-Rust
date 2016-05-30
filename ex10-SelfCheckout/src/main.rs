@@ -50,5 +50,5 @@ fn main() {
     let tax = 0.055;
     println!("Subtotal: ${}", sum);
     println!("Tax: ${}", sum * tax);
-    println!("Total: ${}", sum * (1.0 + tax))
+    println!("Total: ${}", sum * (1.0 + tax));
 }
