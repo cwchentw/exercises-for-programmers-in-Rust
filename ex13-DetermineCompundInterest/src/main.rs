@@ -21,16 +21,19 @@ fn main() {
         .parse().ok().expect("Not a number");
     assert!(year >= 0.0);
 
-    let msg = "What is the number of times the interest
-is compounded per year? ";
-    prompt(msg);
-    let mut _perYear = String::new();
-    let perYear: f64 = input(&mut _perYear)
+    let mut msg = String::new();
+    msg.push_str("What is the number of times the interest\n");
+    msg.push_str("is compounded per year? ");
+    let s: &str = &msg;
+    prompt(s);
+    let mut _per_year = String::new();
+    let per_year: f64 = input(&mut _per_year)
         .parse().ok().expect("Not a number");
-    assert!(perYear >= 0.0);
+    assert!(per_year >= 0.0);
 
     println!("${} invested at {}% for {} years", principal, rate, year);
     println!("compounded {} times per year is ${:.*}.",
-             perYear, 2,
-             principal * (1.0 + rate / 100.0 / perYear).powf(perYear * year));
+             per_year, 2,
+             principal * (1.0 + rate / 100.0 / per_year)
+             .powf(per_year * year));
 }
