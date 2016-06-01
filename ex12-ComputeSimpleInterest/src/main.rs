@@ -19,5 +19,6 @@ fn main() {
         .parse().ok().expect("Not a number");
 
     println!("After {} years at {}%, the investment will", year, rate);
-    println!("be worth ${}.", principal * (1.0 + year * (rate / 100.0)));
+    println!("be worth ${:.*}.",
+             2, principal * (1.0 + year * (rate / 100.0)));
 }
