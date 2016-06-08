@@ -1,0 +1,7 @@
+[package]
+name = "ex15-PasswordValidation"
+version = "0.1.0"
+authors = ["Michael Chen <cwchen123@gmail.com>"]
+
+[dependencies]
+commons = { path = "../commons" }
