@@ -1,0 +1,11 @@
+[root]
+name = "ex21-NumbersToNames"
+version = "0.1.0"
+dependencies = [
+ "commons 0.1.0",
+]
+
+[[package]]
+name = "commons"
+version = "0.1.0"
+
